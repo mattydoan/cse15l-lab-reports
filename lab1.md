@@ -1,5 +1,8 @@
+Lab Report 1
+
 ![Image](cd.png)
-When running the 'cd' command with no arguments, it changes the working directory to the default root directory. When running 'cd' with a path to a directory, the working directory is set to the input directory. When running 'cd' with a path to a file, the error "not a directory" is printed because the working directory cannot be changed to a file. 
+
+When running the 'cd' command with no arguments, it changes the working directory to the root directory. When running 'cd' with a path to a directory, the working directory is set to the input directory. When running 'cd' with a path to a file, the error "not a directory" is printed because the working directory cannot be changed to a file. 
 
 ![Image](ls.png)
 When running the 'ls' command with no arguments, the root folder title is printed. When running 'ls' with a path to a directory, the contents of that directory are printed. When running 'ls' with a path to a file, the path is printed. 
