@@ -42,6 +42,7 @@ In the above example, when the user inputs the name "jpolitz" and the message "H
 This process is then repeated with the name "matthew" and "Hello", "hi", and "how are you", adding to the chat history with each input.
 
 Part 2:
+
 ![Image](privatekey.png)
 Starting from the home directory, I used the `ls` command, along with the absolute path to the private key, "/Users/matthewdoan/.ssh/id_rsa", to reprint the absolute path. 
 
@@ -52,6 +53,7 @@ Starting from the home directory, I used the `ls` command, along with the absolu
 Using the `mkdir` command, I created the new directory ".ssh" onto my remote ieng6 account, which I then copied the public key into using the `scp` command. This allowed for the bypass of authentication when logging into my ieng6 account.
 
 Part 3:
+
 In our most recent labs, I learned about web servers and server-client interaction. I learned how to deploy and customize web servers, access them locally and remotely, and experiment with different URL paths and queries. This hands-on experience with web servers and their code gave me insight into the mechanisms of web applications and the work that goes into the powering the internet.
 
 
