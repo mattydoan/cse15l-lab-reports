@@ -1,7 +1,8 @@
 Lab Report 2
 ![Image](website.png)
 
-```class Handler implements URLHandler {
+```
+class Handler implements URLHandler {
     private String chatHistory = "";
     
     public String handleRequest(URI url) {
@@ -32,4 +33,5 @@ Lab Report 2
             return "404 Not Found!";
         }
     }
-}```
+}
+```
