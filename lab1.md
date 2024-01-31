@@ -1,6 +1,7 @@
 Lab Report 1
 
 ![Image](cd.png)
+
 When running the `cd` command with no arguments, it changes the working directory to the home directory because no other is inputted; this can be used to reset the working directory. In the pictured case, the working directory begins at home and so cd has no affect, therefore it is not an error.
 
 When running `cd` with a path to a directory, the working directory is set to the input directory. In the pictured case, the working directory begins at `home` and then changes to `home/lecture1`, meaning it did not result in an error.
