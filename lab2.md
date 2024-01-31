@@ -1,8 +1,9 @@
 Lab Report 2
 ![Image](website.png)
 
-class Handler implements URLHandler {
+```class Handler implements URLHandler {
     private String chatHistory = "";
+    
     public String handleRequest(URI url) {
         if (url.getPath().equals("/add-message")) {
             String query = url.getQuery();
@@ -31,4 +32,4 @@ class Handler implements URLHandler {
             return "404 Not Found!";
         }
     }
-}
+}```
