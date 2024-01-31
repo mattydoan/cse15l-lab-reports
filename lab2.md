@@ -1,12 +1,8 @@
 Lab Report 2
 ![Image](website.png)
 
-![Image](code.png)
-import java.io.IOException;
-import java.net.URI;
-
 class Handler implements URLHandler {
-    private StringBuilder chatHistory = new StringBuilder();
+    private String chatHistory = "";
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/add-message")) {
@@ -26,27 +22,14 @@ class Handler implements URLHandler {
                 }
 
                 if (!message.isEmpty() && !user.isEmpty()) {
-                    chatHistory.append(user).append(": ").append(message).append("\n");
+                    chatHistory += user + ": " + message + "\n";
                 }
-                return chatHistory.toString();
+                return chatHistory;
             } else {
                 return "Invalid request. Please use /add-message?s=<message>&user=<username>";
             }
         } else {
             return "404 Not Found!";
         }
-    }
-}
-
-class ChatServer {
-    public static void main(String[] args) throws IOException {
-        if(args.length == 0){
-            System.out.println("Missing port number! Try any number between 1024 to 49151");
-            return;
-        }
-
-        int port = Integer.parseInt(args[0]);
-
-        Server.start(port, new Handler());
     }
 }
