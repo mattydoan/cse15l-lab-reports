@@ -3,7 +3,6 @@ Lab Report 2
 
 class Handler implements URLHandler {
     private String chatHistory = "";
-
     public String handleRequest(URI url) {
         if (url.getPath().equals("/add-message")) {
             String query = url.getQuery();
