@@ -36,7 +36,7 @@ static List<String> filter(List<String> list, StringChecker sc) {
     }
 ```
     
-With the correct code, this test should return the list {"hi", "pie"} but it returns {"pie", "hi"}.
+With the correct code, this test should return the list ["hi", "pie"] but it returns ["pie", "hi"].
 
 **Passing JUnit test:**
 
@@ -57,7 +57,7 @@ With the correct code, this test should return the list {"hi", "pie"} but it ret
 }
 ```
 
-This test passes because there is only one element in the array with the input element, meaning it will just return {"hi"}.
+This test passes because there is only one element in the array with the input element, meaning it will just return ["hi"].
 
 ![Image](filtertests.png)
 
