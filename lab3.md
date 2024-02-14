@@ -59,6 +59,8 @@ With the correct code, this test should return the list {"hi", "pie"} but it ret
 
 This test passes because there is only one element in the array with the input element, meaning it will just return {"hi"}.
 
+![Image](filtertests.png)
+
 The bug in the code is the line `result.add(0, s);`. The code fails because as it iterates through the ArrayList, it places strings with the input element at index 0, which means the new list will return reversed instead of the original order. 
 
 `Fixed code:`
