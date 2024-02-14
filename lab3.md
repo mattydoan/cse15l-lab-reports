@@ -1,4 +1,3 @@
-<h1>
 **Lab Report 3**
 
 **Part 1:**
@@ -80,6 +79,10 @@ static List<String> filter(List<String> list, StringChecker sc) {
 
 By removing the 0 in `result.add(0, s);`, the code returns the elements in order of iteration rather than at the same index, ensuring that the new list is in the correct order rather than reversed. 
 
-**Part 2:**
+__Part 2:__
 
+The `find` command is used to search for files and directories, allowing users to find files by name, type, size, etc. 
+
+Command-Line Options:
+**1)** 
 
