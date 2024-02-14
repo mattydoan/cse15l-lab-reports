@@ -83,6 +83,36 @@ __Part 2:__
 
 The `find` command is used to search for files and directories, allowing users to find files by name, type, size, etc. 
 
-Command-Line Options:
-**1)** 
+**Command-Line Options:**
+
+**1)** `-name pattern` : This command-line option allows the user to search for files with a specific name.
+    Ex 1. 
+    ```
+    matthewdoan@Matthews-MacBook-Pro-8 technical % find . -name nov1.txt
+    ./government/Env_Prot_Agen/nov1.txt
+    ```
+    This command example searches through the technical directory and looks for the file, nov1.txt, returning the file path. This might be of use if        there are many files the user has to search through because it allows them to instantly find the path instead of looking through the directory.
+    Ex 2.
+    ```
+    matthewdoan@Matthews-MacBook-Pro-8 technical % find . -name Media
+    ./government/Media
+    ```
+    This command example searches through the technical directory and searches for the directory, Media, returning the path. This could be useful when
+    there are directories within directories because the user does not have to manually look through them to find their needed path.
+    
+**2)** `-empty` : This command-line option finds any empty files and directories.
+    Ex 1. 
+    
+    Ex 2.
+    
+**3)** `-print` : This command-line option displays path names for the files that match the criteria.
+    Ex 1.
+
+    Ex 2.
+    
+**4)** `-delete` : This command-line option deletes files that match the criteria.
+    Ex 1.
+
+    Ex 2.
+    
 
