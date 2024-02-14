@@ -90,7 +90,7 @@ The `find` command is used to search for files and directories, allowing users t
     Ex 1. 
     
     ```
-    matthewdoan@Matthews-MacBook-Pro-8 technical % find . -name nov1.txt
+     matthewdoan@Matthews-MacBook-Pro-8 technical % find . -name nov1.txt
     
     ./government/Env_Prot_Agen/nov1.txt
     ```
@@ -100,6 +100,7 @@ The `find` command is used to search for files and directories, allowing users t
     Ex 2.
     
     ```
+    
     matthewdoan@Matthews-MacBook-Pro-8 technical % find . -name Media
     ./government/Media
     
