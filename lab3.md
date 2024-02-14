@@ -1,4 +1,5 @@
-<h6>**Lab Report 3**
+<h6>
+**Lab Report 3**
 
 **Part 1:**
 
