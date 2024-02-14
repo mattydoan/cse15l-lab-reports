@@ -100,10 +100,10 @@ The `find` command is used to search for files and directories, allowing users t
     
     Ex 2.
     
-    ```
+
     matthewdoan@Matthews-MacBook-Pro-8 technical % find . -name Media
     ./government/Media
-    ```
+  
     
     This command example searches through the technical directory and searches for the directory, Media, returning the path. This could be useful when
     there are directories within directories because the user does not have to manually look through them to find their needed path.
