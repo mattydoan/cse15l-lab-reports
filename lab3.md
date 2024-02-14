@@ -87,43 +87,71 @@ The `find` command is used to search for files and directories, allowing users t
 
 **1)** `-name pattern` : This command-line option allows the user to search for files with a specific name.
 
-    Ex 1. 
-    
-
-    matthewdoan@Matthews-MacBook-Pro-8 technical % find . -name nov1.txt
-    
-    ./government/Env_Prot_Agen/nov1.txt
-    
- 
-    
-    This command example searches through the technical directory and looks for the file, nov1.txt, returning the file path. This might be of use if       there are many files the user has to search through because it allows them to instantly find the path instead of looking through the directory.
-    
-    Ex 2.
-    
-
-    matthewdoan@Matthews-MacBook-Pro-8 technical % find . -name Media
-    ./government/Media
+Example 1:
+```   
+matthewdoan@Matthews-MacBook-Pro-8 technical % find . -name nov1.txt
+./government/Env_Prot_Agen/nov1.txt
+```
   
+This command example searches through the technical directory (working directory) and looks for the file nov1.txt, returning the file path. This might be of use if       there are many files the user has to search through because it allows them to instantly find the path instead of looking through the directory.
     
-    This command example searches through the technical directory and searches for the directory, Media, returning the path. This could be useful when
-    there are directories within directories because the user does not have to manually look through them to find their needed path.
+Example 2.
+```
+matthewdoan@Matthews-MacBook-Pro-8 technical % find . -name Media
+./government/Media
+```
+    
+This command example searches through the technical directory (working directory) and searches for the directory Media, returning the path. This could be useful when
+there are directories within directories because the user does not have to manually look through them to find their needed path.
     
 **2)** `-empty` : This command-line option finds any empty files and directories.
 
-    Ex 1. 
-    
-    Ex 2.
-    
-**3)** `-print` : This command-line option displays path names for the files that match the criteria.
+Example 1: 
+```
+matthewdoan@Matthews-MacBook-Pro-8 technical % find . -type f -empty
+./government/Media/testempty2.txt
+./plos/testempty.txt
+```
+This command example searches through the technical directory (working directory) and finds empty files, returning the file path. In this case I added empty files however this might be useful when looking for unused files that are taking up space. 
 
-    Ex 1.
+Example 2:
+```
+matthewdoan@Matthews-MacBook-Pro-8 technical % find . -type d -empty
+./government/emptydirectory
+./emptydirectory2
+```
+This command example searches through the technical directory (working directory) and finds empty directories, returning the path. Like for the files, I added empty directories, howver this could be useful in a similar way, deleting empty directories could optimize performance of the filesystem.
 
-    Ex 2.
-    
+**3)** `-iname pattern` : This command-line option, like `-name pattern` allows the user to search for files with a specific name, however is case insensitive.
+
+Example 1:
+```
+matthewdoan@Matthews-MacBook-Pro-8 technical % find . -iname JOURNAL.PBIO.0020001.TXT
+./plos/journal.pbio.0020001.txt
+```
+This command example searches through the technical directory (working directory) for journal.pbio.0020001.txt despite the input being in all caps, and returns the path. This might be useful when you are unsure of the name of the specific file or directory you are looking for and don't want to miss it because of slight differences in capitalization. 
+
+Example 2:
+```
+matthewdoan@Matthews-MacBook-Pro-8 technical % find . -iname ChApTeR-1.TXT         
+./911report/chapter-1.txt
+```
+This command example searches through the technical directory (working directory) for chapter-1.txt despite the random capitalized letters, and returns the path. This might be useful when working on different platforms that differ in name conventions, for example Windows is case insensitive while Linux is case sensitive.
+
 **4)** `-delete` : This command-line option deletes files that match the criteria.
 
-    Ex 1.
+Example 1:
+```
+matthewdoan@Matthews-MacBook-Pro-8 technical % find . -type d -empty -delete
+```
+This command example searches through the technical directory (working directory) for empty directories and then deletes them. There is no returned output other than the deletion of the directories. This might be useful when you need to delete empty directories in bulk, especially when there are too many to search through. 
 
-    Ex 2.
-    
+Example 2:
+```
+matthewdoan@Matthews-MacBook-Pro-8 technical % find . -type f -empty -delete
+```
+This command example searches through the technical directory (working directory) for empty files and then deletes them. There is no returned output other than the deletion of the files. Like the directories, this is useful when you need to delete empty files in bulk.
+
+**Works Cited:**
+https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
 
