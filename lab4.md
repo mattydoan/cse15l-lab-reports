@@ -18,7 +18,7 @@ I cloned my forked repository from my Github by using the `git clone` command fo
 
 ![Image](step6.png)
 
-I ran the tests by using the `bash` command to run the `test.sh` shell script, typing `bash <space> test.sh <enter>`. 
+I ran the tests by using the `bash` command to run the `test.sh` shell script which would then run the `ListExamplesTests.java file`, typing `bash <space> test.sh <enter>`. The `testMerge2` test failed.
 
 **7) Edit the code file to fix the failing test**
 
