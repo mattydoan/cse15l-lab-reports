@@ -21,3 +21,8 @@ I cloned my forked repository from my Github by using the `git clone` command fo
 I ran the tests by using the `bash` command to run the `test.sh` shell script, typing `bash <space> test.sh <enter>`.
 
 **7) Edit the code file to fix the failing test**
+
+![Image](vimtest.png)
+
+To fix the failing test I used the `vim` command, typing `vim <space> ListExamples.java <enter>` to get into the ListExamples file. From there I typed `j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j l l l l l l l l l l l l x <esc> i <2> <esc> <:wq> <enter>` to change index1 to index2.
+ 
